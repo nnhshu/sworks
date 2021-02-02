@@ -1,0 +1,40 @@
+@import '../../assets/scss/Variable.scss';
+@import '../../assets/scss/Font.scss';
+@import '../../assets/scss/Responsive.scss';
+@import '../../assets/scss/Animate.scss';
+
+.single_portfolio_part {
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba($color: #040539, $alpha: .10);
+    cursor: pointer;
+    border-radius: 0.25rem !important;
+    &__text{
+        padding: 10px 15px;
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 28px;
+            cursor: pointer;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        span{
+            font-size: .9rem;
+        }
+    }
+    
+    img{
+        width: 100%;
+        transition: .3s;
+    }
+    .single_portfolio_img{
+        transition: .3s;
+        display: inline-block;
+    }
+    &:hover{
+        .single_portfolio_img{
+            transform: translateY(-10px);
+        }
+    }
+}

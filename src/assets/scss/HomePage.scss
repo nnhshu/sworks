@@ -1,0 +1,168 @@
+@import './Variable.scss';
+@import './Font.scss';
+@import './Responsive.scss';
+@import './Button.scss';
+
+
+.home-wrapper{
+    overflow-y: scroll;
+    max-height: 100vh;
+    scroll-snap-type: y mandatory;
+    section{
+        scroll-snap-align: start;
+    }
+}
+.hero-banner{
+    padding-top: 20rem; 
+    padding-bottom: 10rem; 
+    height: 100vh;
+    @include mobile{
+        padding-top: 10rem;
+    }
+    &-title{
+        font-size: 72px;
+    }
+    .icon-scroll{
+        position: absolute;
+        left: 50%;
+        width: 30px;
+        height: 50px;
+        margin-left: -20px;
+        bottom: 30px;
+        margin-top: -35px;
+        border: 2px solid $primary-color;
+        border-radius: 25px;
+        
+        &::before{
+            position: absolute;
+            left: 50%;
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: $primary-color;
+            margin-left: -4px;
+            top: 8px;
+            border-radius: 4px;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-name: scroll
+        }
+    }
+    @keyframes scroll {
+        0% {
+            opacity: 1
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(26px)
+        }
+    }
+}
+
+.service-us{
+    padding-top: 100px;
+    height: 100vh;
+    @include tablet{
+        height: auto;
+    }
+    @include mobile{
+        height: auto;
+    }
+}
+
+.about-us{
+    padding-top: 150px;
+    height: 100vh;
+    @include tablet{
+        height: auto;
+        .container{
+            .row{
+                .col-md-12{
+                    >img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+    @include mobile{
+        height: auto;
+        .container{
+            .row{
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}
+
+.whyChoose-us{
+    padding-top: 150px;
+    height: 100vh;
+    @include tablet{
+        height: auto;
+        .container{
+            .row{
+                .col-md-12{
+                    >img{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+    @include mobile{
+        height: auto;
+    }
+    &__box{
+        padding: 1rem;
+        &:hover{
+            .rounded{
+                -webkit-animation: headShake 1.2s infinite;
+                -moz-animation: headShake 1.2s infinite;
+                -o-animation: headShake 1.2s infinite;
+                animation: headShake 1.2s infinite;
+                -webkit-animation-duration: 5s;
+                -moz-animation-duration: 5s;
+                -o-animation-duration: 5s;
+                animation-duration: 5s;
+            }
+        }
+    }
+    .shadow {
+        box-shadow: 0 10px 30px 5px rgba(1, 164, 121, 0.06) !important;
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
+        &:hover{
+            box-shadow: 0 10px 25px 10px rgba(0,0,0,.1) !important;
+        }
+    }
+}
+
+.porfolio-us{
+    @include tablet{
+        height: auto !important;
+    }
+    @include mobile{
+        >.container{
+            >.row{
+                >.col-md-12{
+                    >.d-flex{
+                        flex-direction: column;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+        .title_page{
+            text-align: center;
+        }
+    }
+}
+
+.porfolio-us,
+.counters{
+    height: 100vh;
+    padding-top: 100px;
+    @include mobile{
+        height: auto;
+    }
+}

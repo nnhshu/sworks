@@ -1,0 +1,50 @@
+@import '../../assets/scss/Variable.scss';
+@import '../../assets/scss/Font.scss';
+@import '../../assets/scss/Responsive.scss';
+@import '../../assets/scss/Animate.scss';
+
+
+.feature-box{
+    background-color: #fcfcfcc7;
+    border-radius: .25rem;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    .f-point{
+        position: absolute;
+        margin-right: 0;
+        right: 50px;
+        @include mobile{
+            right: 25px;
+            top: 30px;
+        }
+        h1{
+            font-family: 'Avenir';
+            font-size: 212px;
+            color: rgba(100, 117, 137, 0.68);
+            font-weight: bold;
+            line-height: 0.78;
+            @include mobile{
+                font-size: 140px;
+            }
+        }
+    }
+    &__icon{
+        &__img{
+            img{
+                width: 150px;
+                height: 150px;
+                object-fit: contain;
+            }
+        }
+        h5{
+            font-family: 'Avenir-Bold';
+            font-size: 18px;
+        }
+    }
+    &:hover{
+        box-shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.1) !important;
+        .f-point{
+            animation: tada 1s infinite;
+            animation-duration: 3s;
+        }
+    }
+}

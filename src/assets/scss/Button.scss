@@ -1,0 +1,57 @@
+@import './Variable.scss';
+
+button {
+	&:focus {
+		outline: none;
+	}
+}
+.btn {
+    font-weight: 600;
+    padding: 0.70rem 1.5rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 9; 
+	&:before {
+		content: "";
+		background: $primary-color;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		border-radius: 50%;
+		z-index: -1;
+        border-radius: 50%;
+        transition: all 0.5s ease-in-out 0s;
+	}
+	&:hover {
+		&:before {
+			border-radius: .5rem;
+			-webkit-transform: scale(100);
+			-moz-transform: scale(100);
+			-ms-transform: scale(100);
+			-o-transform: scale(100);
+			transform: scale(100);
+		}
+	}
+}
+.btn-link {
+	color: #2f2f41;
+	&:hover {
+		color: $primary-color;
+	}
+}
+
+.btn-primary {
+    color: #2f2f41;
+    background-color: rgba(1, 164, 121, 0.1);
+    border-color: $primary-color;
+    &:hover{
+        color: #ffffff;
+        background-color: $primary-color;
+        border-color: $primary-color;
+        box-shadow: none;
+    }
+}

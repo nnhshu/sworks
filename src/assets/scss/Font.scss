@@ -1,0 +1,12 @@
+@mixin font($font-family, $font-file, $font-weight) {
+    @font-face {
+        font-family: $font-family;
+        src: url($font-file+'.woff2') format('woff2') ;
+        font-weight: $font-weight;
+        font-style: normal;
+    }
+}
+
+@include font('Avenir', '../fonts/Avenir/AvenirNext-Medium', 400);
+@include font('Avenir-Bold', '../fonts/Avenir/AvenirNext-Bold', 700);
+@include font('Typold', '../fonts/Typold/Typold-Regular', 400);

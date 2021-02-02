@@ -1,0 +1,17 @@
+@import '../../assets//scss/Variable.scss';
+@import '../../assets//scss/Font.scss';
+@import '../../assets//scss/Responsive.scss';
+
+.title_page{
+    h2{
+        font-size: 3.5rem;
+        font-weight: 700;
+        font-family: "Typold";
+        @include tablet{
+            font-size: 2.5rem;
+        }
+        @include mobile{
+            font-size: 2rem;
+        }
+    }
+}
