@@ -44,17 +44,6 @@
 			-o-transform: scale(1);
 			transform: scale(1);
 		}
-		.feature-icon {
-			-webkit-animation: headShake 1.2s infinite;
-			-moz-animation: headShake 1.2s infinite;
-			-o-animation: headShake 1.2s infinite;
-			animation: headShake 1.2s infinite;
-			-webkit-animation-duration: 5s;
-			-moz-animation-duration: 5s;
-			-o-animation-duration: 5s;
-			animation-duration: 5s;
-			position: relative;
-		}
 	}
 	h5{
 		font-family: 'Avenir-Bold';
@@ -73,7 +62,17 @@
 		transform: scale(1);
 	}
 }
+
 .feature-icon {
+	-webkit-animation: headShake 1.2s infinite;
+	-moz-animation: headShake 1.2s infinite;
+	-o-animation: headShake 1.2s infinite;
+	animation: headShake 1.2s infinite;
+	-webkit-animation-duration: 5s;
+	-moz-animation-duration: 5s;
+	-o-animation-duration: 5s;
+	animation-duration: 5s;
+	position: relative;
 	img{
 		width: 3.5rem;
 	}

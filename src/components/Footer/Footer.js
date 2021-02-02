@@ -7,6 +7,7 @@ import './Footer.scss';
 import Title from '../Title/Title';
 
 import ImgFooter from '../../assets/images/img-footer_1.png';
+import BgFooter from '../../assets/images/bg-footer.png';
 import Facbook from '../../assets/images/icons-svg/facebook.svg';
 import Instagram from '../../assets/images/icons-svg/instagram.svg';
 import Skype from '../../assets/images/icons-svg/skype.svg';
@@ -15,9 +16,16 @@ import SmartPhone from '../../assets/images/icons-svg/smartphone.svg';
 
 function Footer () {
 
+    const style_heroBanner = {
+        background: `url(${BgFooter}) rgba(180, 180, 180, 0.08)`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundBlendMode: 'multiply'
+    };
+
     return(
         <>
-            <section className="footer">
+            <section className="footer" style={style_heroBanner}>
                 <Container>
                     <Row>
                         <Col md={12} className="text-center">
@@ -40,23 +48,24 @@ function Footer () {
                         <Col md={12} className="text-center">
                             <div className="d-flex justify-content-center flex-direction-column">
                                 <div className="footer-box">
-                                    <img src={Email} width="64" />
+                                    <div className="footer-box__img">
+                                        <img src={Email} width="24" />
+                                    </div>
                                     <div className="footer-box__text">
-                                        <span className="font-weight-bold">nnhshu97@gmail.com</span>
-                                        <span className="font-weight-bold">phaminhtuong89@gmail.com</span>
+                                        <span className="font-weight-bold">nhathaonguyen.dev@gmail.com</span>
                                     </div>
                                 </div>
                                 <div className="footer-box">
-                                    <img src={SmartPhone} width="64" />
+                                    <div className="footer-box__img">
+                                        <img src={SmartPhone} width="24" />
+                                    </div>
                                     <span className="font-weight-bold">0975.356.819</span>
-                                    <span className="font-weight-bold">0975356819</span>
                                 </div>
                             </div>
                         </Col>
                         
                     </Row>
                 </Container>
-                <img src={ImgFooter} className="footer-imgLeft"/>
             </section>
         </>
     );

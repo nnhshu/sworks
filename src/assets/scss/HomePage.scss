@@ -3,15 +3,6 @@
 @import './Responsive.scss';
 @import './Button.scss';
 
-
-.home-wrapper{
-    overflow-y: scroll;
-    max-height: 100vh;
-    scroll-snap-type: y mandatory;
-    section{
-        scroll-snap-align: start;
-    }
-}
 .hero-banner{
     padding-top: 20rem; 
     padding-bottom: 10rem; 

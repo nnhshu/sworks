@@ -5,7 +5,8 @@
 
 
 .footer{
-    padding-top: 150px;
+    display: flex;
+    align-items: center;
     height: 100vh;
     position: relative;
     &-imgLeft{
@@ -44,14 +45,18 @@
     }
     &-box{
         display:flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding: 10px 20px;
         margin: 10px;
         min-width: 300px;
         border-radius: .25rem;
-        img{
-            margin-bottom: 15px;
-            width: 64px !important;
+        &__img{
+            padding: 10px;
+            border-radius: 40px;
+            border: 1px solid;
+            margin-bottom: 10px;
         }
     }
     @include tablet{
