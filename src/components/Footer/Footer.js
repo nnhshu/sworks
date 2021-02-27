@@ -7,7 +7,7 @@ import './Footer.scss';
 import Title from '../Title/Title';
 
 import ImgFooter from '../../assets/images/img-footer_1.png';
-import BgFooter from '../../assets/images/bg-footer.png';
+import BgFooter from '../../assets/images/bg-footer.jpg';
 import Facbook from '../../assets/images/icons-svg/facebook.svg';
 import Instagram from '../../assets/images/icons-svg/instagram.svg';
 import Skype from '../../assets/images/icons-svg/skype.svg';
@@ -34,13 +34,13 @@ function Footer () {
                                 sub_title="" 
                             />
                             <div className="footer-listSocial">
-                                <a target="_blank" href="">
+                                <a target="_blank" href="https://www.facebook.com/nnh.shu">
                                     <img src={Facbook} />
                                 </a>
-                                <a target="_blank" href="">
+                                <a target="_blank" href="https://www.instagram.com/nnh.fe">
                                     <img src={Instagram} />
                                 </a>
-                                <a target="_blank" href="">
+                                <a target="_blank" href="https://join.skype.com/invite/otVthUT5FzBK">
                                     <img src={Skype} />
                                 </a>
                             </div>

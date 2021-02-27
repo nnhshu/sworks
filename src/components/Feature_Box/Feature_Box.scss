@@ -18,13 +18,10 @@
         }
         h1{
             font-family: 'Avenir';
-            font-size: 212px;
+            font-size: 100px;
             color: rgba(100, 117, 137, 0.68);
             font-weight: bold;
             line-height: 0.78;
-            @include mobile{
-                font-size: 140px;
-            }
         }
     }
     &__icon{

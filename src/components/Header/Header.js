@@ -48,7 +48,7 @@ function Header() {
                             <div className="col"> 
                                 <nav className="navbar navbar-expand-lg navbar-light">
                                     <Link className="navbar-brand logo text-primary mb-0 font-w-7" to="/">
-                                        Stheme<span className="text-dark font-w-4">works.</span>
+                                        Stheme<span className="text-dark font-w-4">works</span>
                                     </Link>
                                     <div 
                                         className="menu-icon" 

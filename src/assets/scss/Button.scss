@@ -45,8 +45,8 @@ button {
 }
 
 .btn-primary {
-    color: #2f2f41;
-    background-color: rgba(1, 164, 121, 0.1);
+    color: #ffffff;;
+    background-color: $primary-color;
     border-color: $primary-color;
     &:hover{
         color: #ffffff;

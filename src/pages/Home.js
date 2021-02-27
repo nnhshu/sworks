@@ -11,7 +11,7 @@ import {
 
 
 import '../assets/scss/HomePage.scss';
-import OfficeBg from '../assets/images/office-bg.png';
+import OfficeBg from '../assets/images/banner.jpg';
 import Bg_2 from '../assets/images/4706201.jpg';
 import ChooseUsBg from '../assets/images/bg-1.png';
 import AboutUs from '../assets/images/01.png';
@@ -52,8 +52,8 @@ function HomePage() {
         background: `url(${OfficeBg}) rgba(180, 180, 180, 0.08)`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        backgroundBlendMode: 'multiply',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'bottom'
     };
 
     const style_ChooseUs = {
@@ -73,23 +73,23 @@ function HomePage() {
     const services = [
         {
             icon: Knowledge,
-            name: 'Thiết kế website',
-            desc: 'Chúng tôi sẽ phân tích ưu/khuyết, đưa ra những tính năng phù hợp nhất cho kế hoạch, phương hướng phát triển, độ phù hợp với thị trường và kinh phí dự kiến'
+            name: 'Thiết kế - lập trình website',
+            desc: 'Chúng tôi sẽ phân tích ưu & khuyết điểm, đưa ra những tính năng phù hợp nhất, phương hướng phát triển, độ phù hợp với thị trường và kinh phí dự kiến.'
         },
         {
             icon: Prototype,
             name: 'Convert PSD to HTML',
-            desc: 'Bề dày kinh nghiệm về Front End của chúng tôi đã có hơn 3 năm kinh nghiệm với nhiều dự án trong và ngoài nước.'
+            desc: 'Bề dày kinh nghiệm về Front-End của chúng tôi đã có hơn 3 năm kinh nghiệm với nhiều dự án trong và ngoài nước.'
         },
         {
             icon: SocialMedia,
             name: 'Thiết kế đồ hoạ',
-            desc: 'Cung cấp dịch vụ thiết kế đồ họa chuyên nghiệp tại Hà Nội với đội ngũ Designer có chuyên môn cao, trẻ trung và sáng tạo trong ngành thiết kế đồ họa.'
+            desc: 'Chúng tôi cung cấp dịch vụ thiết kế đồ họa chuyên nghiệp tại Hà Nội với đội ngũ có chuyên môn cao, trẻ trung và sáng tạo.'
         },
         {
             icon: Ads,
             name: 'Quảng cáo Facebook - Google',
-            desc: 'Bạn đang băn khoăn lựa chọn các nhà quảng cáo, các công ty truyền thông uy tín? Hãy để chuyên gia quảng cáo Facebook của chúng tôi tư vấn giúp bạn hiểu rõ hơn về quảng cáo Facebook.'
+            desc: 'Bạn đang băn khoăn lựa chọn các nhà quảng cáo, các công ty truyền thông uy tín? Hãy để chuyên gia quảng cáo của chúng tôi tư vấn giúp bạn hiểu rõ hơn.'
         }
     ];
 
@@ -181,7 +181,7 @@ function HomePage() {
     const chooseUs = [
         {
             name: "Xây dựng quảng bá và nâng tầm thương hiệu",
-            desc: "Xây dựng hình ảnh chuyên nghiệp trong cho doanh nghiệp trong con mắt của khách hàng và đối tác"
+            desc: "Xây dựng hình ảnh chuyên nghiệp trong con mắt của khách hàng và đối tác."
         },
         {
             name: "Tăng khả năng tiếp thị khách hàng trên internet",
@@ -210,13 +210,10 @@ function HomePage() {
                 <Container>
                     <Row className="align-items-center">
                         <Col md={12} className="text-center">
-                            <TypeIt>
-                                <h1 className="mb-5 hero-title">
-                                    Thấu hiểu, đồng hành và thiết kế trải nghiệm digital không giới hạn              
-                                </h1>
-                                <p className="lead mt-5 mb-0">Web design - Marketing online - Brands</p>
-                            </TypeIt>
-                           
+                            <h1 className="mb-2 hero-title">
+                                Chúng tôi sáng tạo, bạn tận hưởng              
+                            </h1>
+                            <p className="lead mb-0">Website - Marketing online</p>
                         </Col>
                     </Row>
                 </Container>
@@ -275,7 +272,7 @@ function HomePage() {
                         <Col md={12} lg={6}>
                             <Title 
                                 title="Hãy để chúng tôi" 
-                                sub_title="Đồng hành cùng bạn tạo nên những website chuyên nghiệp" 
+                                sub_title="Đồng hành cùng bạn tạo nên các website chuyên nghiệp" 
                             />
                             <img src={AboutUs_1} width="75%" />
                         </Col>
@@ -288,8 +285,8 @@ function HomePage() {
                                                 <img src={ServiceIcon_1} width="48" />
                                             </div>
                                         </div>
-                                        <h5 className="mt-4 mb-3">Thiết kế chuyên nghiệp</h5>
-                                        <p className="mb-0">Độc quyền dành riêng cho bạn...</p>
+                                        <h5 className="mt-4 mb-3">Chuyên nghiệp</h5>
+                                        <p className="mb-0">Theo xu hướng thiết kế hiện tại và phong cách dành riêng cho bạn</p>
                                     </div>
                                 </Col>
                                 <Col md={6} className="mt-5">
@@ -310,7 +307,7 @@ function HomePage() {
                                                 <img src={ServiceIcon_2} width="48" />
                                             </div>
                                         </div>
-                                        <h5 className="mt-4 mb-3">Tương thích mọi thiết bị</h5>
+                                        <h5 className="mt-4 mb-3">Tương thích mobile</h5>
                                         <p className="mb-0">PC, Laptop, Mobile, Tablet...</p>
                                     </div>
                                 </Col>
@@ -321,7 +318,7 @@ function HomePage() {
                                                 <img src={ServiceIcon_3} width="48" />
                                             </div>
                                         </div>
-                                        <h5 className="mt-4 mb-3">Báo cáo thống kê chi tiết</h5>
+                                        <h5 className="mt-4 mb-3">Báo cáo chi tiết</h5>
                                         <p className="mb-0">Lượng khách hàng truy cập vào website...</p>
                                     </div>
                                 </Col>
